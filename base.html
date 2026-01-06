@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samrat Sir’s Acting Class | Professional Training</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-area">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Acting School Logo">
+            <h2 style="font-size: 1.2rem;">Samrat Sir’s Acting Class</h2>
+        </div>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li> 
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('opportunities') }}">Opportunities</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://wa.me/918910937643" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/samratsirerabhinayclass/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61583519891822" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <p>© 2026 Samrat Sir’s Acting Class | Baranagar, West Bengal</p>
+    </footer>
+</body>
+</html>

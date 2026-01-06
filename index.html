@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <h1>Acting begins with watching.</h1>
+    <p style="font-size: 1.2rem; color: #ccc; max-width: 800px; margin: 0 auto;">
+        We train actors to observe truth, discipline the body and mind, and respect process over outcome.
+    </p>
+    <a href="{{ url_for('about') }}" class="cta-button">Explore Training →</a>
+</section>
+
+<div class="card-grid">
+    <div class="card">
+        <i class="fa-solid fa-clapperboard" style="color: #d4af37; font-size: 2rem; margin-bottom: 15px;"></i>
+        <h3>Screen Acting</h3>
+        <p>Master the nuances of performing for the camera, focusing on micro-expressions and psychological truth.</p>
+    </div>
+    <div class="card">
+        <i class="fa-solid fa-masks-theater" style="color: #d4af37; font-size: 2rem; margin-bottom: 15px;"></i>
+        <h3>Theatre Basics</h3>
+        <p>Build a strong foundation through classical drama, stage presence, and live performance discipline.</p>
+    </div>
+    <div class="card">
+        <i class="fa-solid fa-microphone-lines" style="color: #d4af37; font-size: 2rem; margin-bottom: 15px;"></i>
+        <h3>Voice & Body</h3>
+        <p>Develop your instrument through voice modulation, diction, and expressive body language training.</p>
+    </div>
+</div>
+{% endblock %}
