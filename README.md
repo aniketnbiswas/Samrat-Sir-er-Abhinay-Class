@@ -8,16 +8,29 @@ Create a main folder (e.g., named acting_site) and arrange your files inside it 
 Plaintext
 
 acting_site/
+
 │
-├── app.py                <-- Your main Python file 
+
+├── app.py                <-- Your main Python file
+
 │
+
 ├── static/               <-- FOLDER for CSS, Images, JS
+
 │   ├── style.css         <-- Your CSS file 
+
 │   └── logo.png          <-- Your logo image
+
 │
+
 └── templates/            <-- FOLDER for all HTML files
+
     ├── base.html         <-- The master layout 
+    
     ├── index.html        <-- Home page 
+    
     ├── about.html        <-- About page 
+    
     ├── opportunities.html <-- Opportunities page 
+    
     └── contact.html      <-- Contact page
